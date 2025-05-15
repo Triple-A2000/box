@@ -27,7 +27,7 @@ body {
 }
 
 body {
-    background-color: #010511;
+    background-color: #1B5D97;
 }
 
 .flex{
@@ -149,6 +149,7 @@ nav ul li + li {
 .hero-section {
     height: 600px;
     background: #000 url(../images/vector-blue-wallpapers.jpg) center center / cover no-repeat;
+    overflow: hidden;
 
     h2 {
         font-size: 6rem;
@@ -179,7 +180,7 @@ button {
     border-radius: 15px;
     width: 120px;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .primary {
@@ -194,12 +195,13 @@ button {
 }
 
 .secondary {
-    background-color: transparent;
+    background-color: rgb(255 255 255 / 20%);
     border: 2px solid #1a2c74;
     color: #fff;
 
     &:hover {
-        background-color: rgb(255 255 255 / 20%);
+        background-color: #fff;
+        color: #1a2c74;
         transition: background-color 0.25s ease-in-out;
     }
 }
@@ -247,7 +249,7 @@ button {
 
 footer {
     height: 60px;
-    background-color: #000;
+    background-color: #101d47;
     
     p {
         line-height: 60px;
