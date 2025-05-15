@@ -1,6 +1,6 @@
 function Nav(props) {
     return (
-        <div className="header-list flex">
+        <div className="header-list flex gap-16">
             {props.list.map(navLink => (
                 <div key={navLink.index}>
                     <nav>

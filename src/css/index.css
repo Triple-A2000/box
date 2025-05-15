@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Sofia Sans", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -24,6 +24,43 @@ body {
 .grid-center {
     display: grid;
     place-items: center;
+}
+
+body {
+    background-color: #010511;
+}
+
+.flex{
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+h1, p, a {
+    color: #fff;
 }
 
 /*------------------------------*/
@@ -61,8 +98,10 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-.title h1 span {
+span {
     color: #1a2c74;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 nav ul {
@@ -85,10 +124,133 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1a2c74;
+    color: #345bf3;
 }
 
 nav ul li + li {
     margin-left: 30px;
 }
 
+.nav-list nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: #1a2c74;
+        transition: color 0.25s ease-in-out;
+    }
+}
+
+
+/*------------------------------*/
+/* Banner                       */
+/*------------------------------*/
+
+.hero-section {
+    height: 600px;
+    background: #000 url(../images/vector-blue-wallpapers.jpg) center center / cover no-repeat;
+
+    h2 {
+        font-size: 6rem;
+        font-weight: 800;
+        background: linear-gradient(90deg, #010511, #011c6d, #010511);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+
+    p {
+        font-size: 1.8rem;
+        margin-top: 8px;
+    }
+
+    h2, p {
+        text-align: center;
+    }
+}
+
+/*------------------------------*/
+/* Buttons                      */
+/*------------------------------*/
+
+button {
+    padding: 11px;
+    border-radius: 15px;
+    width: 120px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.primary {
+    background-color: #1a2c74;
+    border: 2px solid #1a2c74;
+    color: #fff;
+
+    &:hover {
+        background-color: #010511;
+        transition: background-color 0.25s ease-in-out;
+    }
+}
+
+.secondary {
+    background-color: transparent;
+    border: 2px solid #1a2c74;
+    color: #fff;
+
+    &:hover {
+        background-color: rgb(255 255 255 / 20%);
+        transition: background-color 0.25s ease-in-out;
+    }
+}
+
+.button-container {
+    margin-top: 32px;
+}
+
+/*------------------------------*/
+/* Gallery                      */
+/*------------------------------*/
+
+.movie-list {
+    margin: 40px 0;
+    display: flex;
+    grid-template-rows: repeat(4, 350px);
+    grid-gap: 20px;
+    border-radius: 4px;
+}
+
+.movie-list img {
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.movie-list img:hover {
+    transform: translateY(-4px);
+}
+
+.movie-list p {
+    padding-top: 5px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.movie-section {
+    padding-block: 80px
+}
+
+/*------------------------------*/
+/* Footer                       */
+/*------------------------------*/
+
+footer {
+    height: 60px;
+    background-color: #000;
+    
+    p {
+        line-height: 60px;
+        text-align: center;
+    }
+}

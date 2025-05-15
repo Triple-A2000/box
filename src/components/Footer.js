@@ -2,7 +2,7 @@ function Footer(props) {
     return (
         <footer>
             <div className="container">
-              <p>BOX &copy; 2025 </p>
+              <p><span>.</span>BOX &copy; 2025 </p>
             </div>
         </footer>
     )

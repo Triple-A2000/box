@@ -42,9 +42,9 @@ function App() {
 
   return (
     <>
+      <Header title={title} navLinks={navLinks} />
       <Banner heroText={heroText} heroSubtext={heroSubText} isLoggedIn={isLoggedIn}/>
       <div className='container'>
-        <Header title={title} navLinks={navLinks} />
         <Gallery list={movies} />
       </div>
       <Footer />
